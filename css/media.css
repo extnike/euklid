@@ -1,0 +1,578 @@
+@media (max-width: 1500px) {
+  .nav__list {
+    margin-right: 80px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .project__container,
+  .about__container,
+  .work__container,
+  .questions__container,
+  .footer__container {
+    padding: 0 50px;
+  }
+
+  .project__header {
+    font-size: 62px;
+
+  }
+
+  .project__descr {
+    width: 660px;
+    font-size: 20px;
+
+  }
+
+  .swiper-container {
+    left: 50px;
+    width: calc(100% - 100px);
+  }
+
+  .cards {
+    flex-flow: column;
+    max-width: 100%;
+  }
+
+  .cards__card__large {
+    height: 640px;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .about__cards__left {
+    max-width: 100%;
+  }
+
+  .about__cards__right {
+    max-width: 100%;
+  }
+
+  .cards__card__small {
+    background-position: 60px center;
+  }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .footer__descr {
+    display: none;
+  }
+  .footer__left {
+    width: 30%;
+  }
+  .footer__center {
+    width: 70%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    justify-content: space-between;
+    padding: 26px 50px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    height: 48px;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 420px;
+    z-index: 50;
+    padding: 100px 50px 250px 50px;
+    box-shadow: 0 0 5px #CACACA;
+    background-color: #fff;
+    justify-content: left;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+.nav__list {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 0;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 60px;
+}
+.nav__link {
+  font-weight: 700;
+  font-size: 24px;
+}
+.header__nav--active {
+  visibility: visible;
+  transform: none;
+}
+
+  .header__burger {
+    display: block;
+    position: relative;
+    height: 23px;
+    width: 30px;
+    color: #000;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    border-radius: inherit;
+    border: 1px solid currentColor;
+    background-color: currentColor;
+    color: #000;
+    transform: translateX(-50%);
+  }
+
+  .burger__line:nth-child(1) {
+    top: 1px;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 1px;
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--active .burger__line:first-child {
+    left: 25%;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  .burger--active .burger__line:last-child {
+    bottom: auto;
+    left: 25%;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+
+  .project {
+    padding: 40px 0px 20px;
+  }
+
+  .project__wrapper {
+    padding: 160px 0;
+    padding-left: 77px;
+  }
+
+  .project__header {
+    max-width: calc(100% - 2 * 50px);
+    font-size: 60px;
+    line-height: 73px;
+    margin-bottom: 16px;
+  }
+
+  .project__descr {
+    max-width: calc(100% - 2 * 50px);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  .about {
+    padding: 16px 0px 35px;
+  }
+
+  .about__descr {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .work__steps {
+    margin-bottom: 50px;
+  }
+
+  .work__right__img {
+    background-image: url('../img/step_1_bkg_1024.jpg');
+  }
+  .questions {
+    padding-top: 28px;
+    margin-bottom: 30px;
+  }
+  .questions__item__text {
+    width: 80%;
+    font-size: 20px;
+
+    line-height: 1.6em;
+
+  }
+
+
+}
+
+@media (max-width: 1000px) {
+  .header__container {
+    padding: 11px 50px;
+  }
+  .header__nav {
+    padding-bottom: 230px;
+  }
+  .header__search {
+    right: 50px;
+  }
+  .project__wrapper {
+    padding: 160px 40px;
+  }
+
+  .project__header {
+    max-width: calc(100% - 2 * 40px);
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .project__descr {
+    max-width: calc(100% - 2 * 40px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .cards__card__hover {
+    padding: 34px 40px;
+  }
+
+  .cards__card__small {
+    background-size: 115px 100px;
+    background-position: 40px center;
+  }
+
+  .cards__card__small {
+    padding: 35px 48px 35px 170px;
+  }
+
+  .work__steps {
+    width: 100%;
+  }
+  .steps__step:not(:last-child) {
+    margin-right: auto;
+  }
+
+  .work__block {
+    flex-direction: column-reverse;
+  }
+
+  .work__left {
+    width: 100%;
+  }
+  .work__right {
+    width: 100%;
+    height: 284px;
+    margin-bottom: 38px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+  .footer__center {
+    width: 100%;
+  }
+  .form__submit {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .header__search {
+    right: 50px;
+    min-width: 439px;
+  }
+  .header__search-input {
+    min-width: 300px;
+}
+}
+
+
+@media (max-width: 500px) {
+  .project__container,
+  .about__container,
+  .work__container,
+  .questions__container,
+  .footer__container {
+    padding: 0 15px;
+  }
+  .section-header {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .header__container {
+    padding: 17px;
+  }
+  .header__logo {
+    height: 35px;
+    width: 110px;
+  }
+  .header__nav {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .header__search {
+    right: 22.5px;
+    min-width: 310px;
+  }
+  .header__search-input {
+    min-width: 222px;
+}
+.header__search-input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+}
+  .project__wrapper {
+    display: flex;
+    height: auto;
+    padding: 60px 0;
+    align-items: center;
+  }
+
+  .project__header {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 6px;
+    line-height: 24px;
+    align-self: center;
+    letter-spacing: -1px;
+    max-width: calc(100% - 70px);
+  }
+  .project__descr {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    align-self: center;
+    margin-bottom: 32px;
+    max-width: calc(100% - 70px);
+
+  }
+  .project__btn {
+    align-self: center;
+    width: 162px;
+    height: 41px;
+    padding: 13px 28px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .swiper-container {
+    left: 15px;
+    width: calc(100% - 30px);
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .about__descr {
+    font-size: 14px;
+    line-height: 200%;
+    margin-bottom: 14px;
+  }
+
+  .about__cards__left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards__card__large {
+    background-image: none;
+    border: none;
+    height: auto;
+    padding: 0;
+  }
+
+  .cards__card__hover {
+    background: none;
+    padding: 0;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .cards__card__hover::before {
+    content: "";
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/about_large.jpg');
+    background-position: center top;
+    border-radius: 16px;
+    margin-bottom: 8px;
+  }
+
+  .cards__card__hover .cards__card__descr {
+    color: var(--black);
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .cards__card__btn {
+    color: var(--orange);
+    align-self: flex-start;
+  }
+
+  .cards__card__btn:focus-visible {
+    background-color: var(--orange-light);
+    border-color: var(--orange-light);
+    color: #fff;
+  }
+
+  .cards__card__btn:hover {
+    background-color: var(--orange-light);
+    border-color: var(--orange-light);
+    color: #fff;
+  }
+
+  .cards__card__btn:active {
+    background-color: var(--orange-text);
+    border-color: var(--orange-text);
+    color: #fff;
+  }
+
+  .cards__card__small {
+    background-position: top left;
+    background-size: 64px 49px;
+    border: none;
+    padding: 61px 0 0;
+  }
+  .cards__card__header {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cards__card__descr {
+    font-size: 14px;
+  }
+  .work {
+    padding-top: 25px;
+    padding-bottom: 32px;
+  }
+  .work__steps {
+    width: calc(100% - 30px);
+    margin-bottom: 16px;
+    justify-content: space-between;
+  }
+  .steps__step {
+    font-size: 14px;
+  }
+  .steps__step:not(:last-child){
+    margin-right: 0;
+  }
+  .work__right {
+    width: 100%;
+    height: 160px;
+    min-height: 160px;
+  }
+
+  .work__right__img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .work__right__img img {
+    width: 100%;
+    height: 160px;
+  }
+  .work__block__header {
+    font-size: 18px;
+  }
+  .work__block__descr {
+    font-size: 14px;
+
+  }
+  .work__block__btn {
+    padding: 12px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  .work__block__btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  .details-btn {
+    width: calc((100% - 40px) * 0.55);
+  }
+  .contract-btn {
+    width: calc((100% - 40px) * 0.45);
+  }
+
+  .questions__item__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .questions__item__logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__container {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__header {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .form__item {
+    padding: 14px 20px;
+  }
+  .form__submit {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .form__btn {
+    padding: 12px 28px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    margin-bottom: 12px;
+  }
+  .form__agreement {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .footer__logo {
+    height: 42px;
+    width: 131px;
+  }
+  .footer__left {
+    width: 100%;
+    align-items: center;
+  }
+
+
+}
